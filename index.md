@@ -30,6 +30,4 @@ Corporate Finance · Strategy Consulting · Investment Banking · Business Analy
 
 ---
 
-## Contact
 
-[GitHub Profile](https://github.com/AdrianJ04)
