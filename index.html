@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adrian Jasso — Finance, strategy and business analytics. Explore selected case studies in equity valuation, revenue management and commercial strategy.">
+  <meta name="theme-color" content="#152237">
+  <meta property="og:title" content="Adrian Jasso | Finance, Strategy & Analytics">
+  <meta property="og:description" content="Selected work in equity valuation, commercial strategy and business analytics.">
+  <meta property="og:type" content="website">
+  <title>Adrian Jasso — Finance, Strategy & Business Analytics</title>
+  <style>
+    :root{--ink:#152237;--ink-2:#2d3b50;--muted:#5d6979;--teal:#006f65;--teal-light:#dceeea;--cream:#f7f6f2;--paper:#fff;--line:#e3e6e7;--amber:#e8c88b;--radius:18px;--shadow:0 14px 50px rgba(20,37,55,.065)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+    a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:3px}
+    .container{max-width:1130px;padding:0 29px;margin:0 auto}
+    .site-header{position:relative;z-index:3;background:var(--paper);border-bottom:1px solid #e9eceb}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;min-height:82px;gap:22px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:-.025em;font-size:17px}
+    .brand-mark{display:inline-grid;place-items:center;width:37px;height:37px;border-radius:10px;background:var(--ink);color:#fff;font-size:14px;letter-spacing:-.04em}
+    .nav{display:flex;align-items:center;gap:29px;color:#465265;font-size:13px;font-weight:600}
+    .nav a:hover,.footer a:hover{color:var(--teal)}
+    .nav .nav-contact{border:1px solid #cad4d6;padding:9px 15px;border-radius:8px;color:var(--ink)}
+    .nav .nav-contact:hover{background:#ecf4f1;border-color:var(--teal)}
+    .hero{position:relative;isolation:isolate;overflow:hidden;background:#152237;color:#fff}
+    .hero::before{content:"";position:absolute;pointer-events:none;z-index:-1;width:520px;height:520px;right:-125px;top:-225px;border:1px solid #6880874b;border-radius:50%;box-shadow:0 0 0 90px #a6bbcc0b,0 0 0 180px #a6bbcc09,0 0 0 275px #a6bbcc06}
+    .hero-inner{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(230px,.62fr);gap:36px;align-items:end;padding-top:91px;padding-bottom:101px}
+    .eyebrow{display:flex;align-items:center;gap:11px;margin:0 0 22px;text-transform:uppercase;letter-spacing:.16em;font-weight:750;font-size:11px}
+    .eyebrow::before{content:"";width:28px;height:2px;background:var(--amber);flex:none}
+    .hero .eyebrow{color:#cfdbc9}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(45px,5.7vw,74px);line-height:1.055;letter-spacing:-.061em;max-width:820px;margin:0 0 23px;font-weight:740}
+    h1 em{font-style:normal;color:#a7d6cc}
+    .hero-summary{font-size:17px;line-height:1.8;color:#c4cfdb;max-width:630px;margin-bottom:31px}
+    .hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:9px;font-size:13px;font-weight:750;transition:transform .2s,background .2s,border-color .2s}
+    .button:hover{transform:translateY(-2px)}
+    .button-primary{background:#a8d9ce;color:#102d2c}.button-primary:hover{background:#c6ebe2}
+    .button-ghost{border:1px solid #6f8191;color:white}.button-ghost:hover{border-color:#c4d0dc;background:#ffffff12}
+    .arrow{font-size:17px;line-height:1}
+    .hero-note{align-self:end;border-left:1px solid #607386;padding-left:24px;margin-bottom:8px}
+    .hero-note .top{font-size:12px;color:#9cb3c7;letter-spacing:.1em;text-transform:uppercase;font-weight:750;margin-bottom:9px}
+    .hero-note .big{font-size:23px;line-height:1.25;font-weight:650;letter-spacing:-.03em;margin:0 0 9px}
+    .hero-note .small{font-size:13px;color:#b6c5d2;margin:0}
+    .summary-bar{background:white;border-bottom:1px solid var(--line)}
+    .summary-inner{display:grid;grid-template-columns:repeat(3,1fr);padding:27px 0;gap:0}
+    .summary-item{padding-left:28px;border-left:1px solid var(--line)}.summary-item:first-child{padding-left:0;border-left:0}
+    .summary-item strong{display:block;font-size:15px;letter-spacing:-.02em}.summary-item span{font-size:12px;color:var(--muted)}
+    main section{scroll-margin-top:28px}
+    .work-section{padding:96px 0 54px}
+    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:33px}
+    .kicker{font-size:11px;letter-spacing:.17em;font-weight:800;color:var(--teal);text-transform:uppercase;margin-bottom:13px}
+    h2{font-size:clamp(29px,3.7vw,45px);letter-spacing:-.052em;line-height:1.13;margin:0;font-weight:760}
+    .section-aside{color:var(--muted);font-size:14px;max-width:300px;margin:0}
+    .project{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);overflow:hidden;border-radius:var(--radius);background:#fff;border:1px solid #e5e9e8;box-shadow:var(--shadow);margin:0 0 26px}
+    .project-body{padding:43px 42px 40px}
+    .project-index{font-weight:800;font-size:11px;letter-spacing:.12em;color:var(--teal);text-transform:uppercase;margin:0 0 25px}
+    .project-title{font-size:clamp(25px,2.8vw,34px);letter-spacing:-.045em;line-height:1.16;margin:0 0 17px;font-weight:760}
+    .project-description{font-size:15px;color:#58677b;line-height:1.85;max-width:550px;margin:0 0 25px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:25px}
+    .chip{font-size:11px;color:#3c5661;font-weight:700;letter-spacing:.01em;padding:6px 10px;background:#edf3f2;border-radius:6px}
+    .project-points{display:grid;gap:9px;margin:0 0 29px;padding:0;list-style:none}
+    .project-points li{font-size:13px;color:#43536a;padding-left:19px;position:relative}
+    .project-points li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+    .project-links{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .project-links .button{padding:12px 14px}
+    .project-links .button-primary{background:var(--ink);color:white}.project-links .button-primary:hover{background:#243b57}
+    .project-links .button-secondary{border:1px solid #d7dfdf;color:var(--ink)}.project-links .button-secondary:hover{background:#f3f8f7}
+    .project-art{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:430px;padding:38px;background:#e8efed;overflow:hidden}
+    .project-art::before{position:absolute;content:"";inset:-18%;background:radial-gradient(circle at 85% 10%,#a8cfc333,transparent 35%);pointer-events:none}
+    .visual-caption{z-index:1;font-size:10px;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:#506a67;margin-bottom:28px}
+    .model-card{position:relative;background:#fff;border:1px solid #d6e3df;box-shadow:0 18px 40px #233e3a13;border-radius:11px;padding:25px;transform:rotate(-2deg)}
+    .model-heading{font-size:11px;color:#617575;font-weight:750;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+    .metric-row{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid #e8eeeb;font-size:12px;color:#3f525b}.metric-row strong{color:var(--ink);font-size:14px}
+    .model-dcf{background:#dceee9;color:#145b53;display:inline-flex;padding:6px 10px;border-radius:5px;font-size:10px;font-weight:800;letter-spacing:.08em;margin-top:20px}
+    .project-art.revenue{background:#f1eee6}
+    .project-art.revenue::before{background:radial-gradient(circle at 90% 0%,#ead6a355,transparent 50%)}
+    .revenue-card{position:relative;background:#fff;border-radius:11px;box-shadow:0 18px 40px #6551271a;padding:25px 26px;border:1px solid #eee6d7;transform:rotate(1.8deg)}
+    .revenue-title{font-size:11px;color:#67727a;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .revenue-value{font-size:48px;line-height:1.1;letter-spacing:-.06em;font-weight:780;margin:15px 0 4px;color:#973c38}
+    .revenue-label{font-size:12px;color:#52616a}
+    .bar-display{display:flex;align-items:end;gap:23px;height:128px;margin:16px 0 2px;border-bottom:1px solid #dfe5df;padding:0 20px}
+    .bar-col{flex:1;position:relative;display:flex;flex-direction:column;justify-content:end;align-items:center;height:100%;gap:4px}
+    .bar{width:100%;max-width:62px;background:#17786e;border-radius:5px 5px 0 0}.bar.lower{background:#8bbcb3}
+    .bar-name{position:absolute;bottom:-24px;font-size:10px;color:#53646b}
+    .synthetic{display:flex;gap:8px;align-items:flex-start;border-top:1px solid #e7e7e3;margin-top:32px;padding-top:15px;color:#697680;font-size:11px;line-height:1.6}
+    .synthetic::before{content:"i";font-family:Georgia,serif;font-style:italic;font-weight:700;display:grid;place-items:center;flex:none;width:17px;height:17px;background:#e9ece9;color:#566a66;border-radius:50%}
+    .approach-section{padding:34px 0 100px}
+    .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;border-top:1px solid #d8dfdd;padding-top:49px}
+    .approach-copy{font-size:16px;line-height:1.9;color:#56667a;margin-top:19px;max-width:530px}
+    .approach-items{display:grid;gap:0}
+    .approach-item{display:grid;grid-template-columns:32px 1fr;gap:17px;padding:20px 0;border-bottom:1px solid #dce2df}
+    .approach-item:first-child{padding-top:0}
+    .step-num{font-size:13px;font-weight:800;color:var(--teal);padding-top:3px}
+    .approach-item strong{font-size:15px}.approach-item p{color:var(--muted);font-size:13px;margin:5px 0 0;line-height:1.7}
+    .footer{background:var(--ink);color:#fff;padding:50px 0 28px}
+    .footer-inner{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+    .footer h2{font-size:32px;margin-bottom:12px}.footer p{color:#adbdcb;font-size:14px;margin-bottom:25px;max-width:520px}
+    .footer-links{display:flex;flex-wrap:wrap;align-items:flex-start;gap:19px;font-size:13px;font-weight:700;color:#c4d7e6}
+    .footer-bottom{border-top:1px solid #405065;margin-top:36px;padding-top:17px;color:#a1afbf;font-size:11px;display:flex;gap:15px;justify-content:space-between;flex-wrap:wrap}
+    @media(max-width:860px){.hero-inner{grid-template-columns:1fr;gap:40px;padding-top:65px;padding-bottom:75px}.hero-note{max-width:410px}.project{grid-template-columns:1fr}.project-art{min-height:330px;order:-1}.project-body{padding:32px}.approach-grid{gap:26px}.hero h1{max-width:740px}}
+    @media(max-width:600px){.container{padding:0 19px}.header-inner{min-height:69px;flex-wrap:wrap;padding-top:13px;padding-bottom:14px;gap:12px}.nav{gap:14px;font-size:12px}.nav .nav-contact{padding:6px 9px}.hero-inner{padding-top:54px;padding-bottom:60px}.hero-summary{font-size:15px}.hero-note{margin-top:5px}.summary-inner{grid-template-columns:1fr;gap:15px;padding:24px 0}.summary-item,.summary-item:first-child{padding:0 0 0 15px;border-left:2px solid #d0ddd7}.work-section{padding:68px 0 25px}.section-heading{align-items:start;flex-direction:column;gap:12px}.project-body{padding:26px 22px}.project-art{padding:27px;min-height:305px}.revenue-card,.model-card{padding:21px}.project-links{align-items:stretch;flex-direction:column}.project-links .button{width:100%}.approach-section{padding:10px 0 70px}.approach-grid{grid-template-columns:1fr;gap:28px;padding-top:35px}.footer{padding-top:43px}.footer h2{font-size:28px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Adrian Jasso — back to top"><span class="brand-mark">AJ</span><span>Adrian Jasso</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Selected work</a>
+        <a href="#approach">Approach</a>
+        <a class="nav-contact" href="#contact">Connect ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Finance · Strategy · Business Analytics</p>
+          <h1 id="hero-heading">From complex analysis<br>to <em>clear decisions.</em></h1>
+          <p class="hero-summary">I'm Adrian Jasso, a Mechanical Electrical Engineering student with an interest in corporate finance and strategic problem solving. This portfolio brings together selected work in valuation, pricing, and business analytics.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work <span class="arrow" aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="https://github.com/AdrianJ04" target="_blank" rel="noopener noreferrer">GitHub profile <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Areas of focus"><p class="top">Focus areas</p><p class="big">Corporate Finance<br>Commercial Strategy<br>Analytical Problem Solving</p><p class="small">Monterrey, Mexico<br>Selected work · 2026</p></aside>
+      </div>
+    </section>
+
+    <div class="summary-bar" aria-label="Portfolio capabilities">
+      <div class="container summary-inner">
+        <div class="summary-item"><strong>Equity valuation</strong><span>DCF · WACC · comparable companies</span></div>
+        <div class="summary-item"><strong>Commercial strategy</strong><span>Pricing · market share · product mix</span></div>
+        <div class="summary-item"><strong>Business analytics</strong><span>Data interpretation · recommendations</span></div>
+      </div>
+    </div>
+
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-heading"><div><p class="kicker">01 / Selected Work</p><h2 id="work-heading">Case studies</h2></div><p class="section-aside">Two projects illustrating how financial and commercial analysis can support business decisions.</p></div>
+
+        <article class="project" aria-labelledby="quaker-heading">
+          <div class="project-body">
+            <p class="project-index">Case Study 01 · Corporate Finance</p>
+            <h3 class="project-title" id="quaker-heading">Quaker Chemical<br>Equity Valuation</h3>
+            <p class="project-description">An independent valuation of Quaker Chemical Corporation (NYSE: KWR), integrating historical performance, forward projections, discounted cash flows and market-based valuation techniques to develop an investment view.</p>
+            <div class="chips" aria-label="Project methods"><span class="chip">DCF Valuation</span><span class="chip">Excel Modeling</span><span class="chip">WACC</span><span class="chip">Sensitivity Analysis</span></div>
+            <ul class="project-points">
+              <li>Forecast operating performance and unlevered free cash flows.</li>
+              <li>Translate enterprise value into an implied equity valuation.</li>
+              <li>Evaluate assumptions, comparables and investment implications.</li>
+            </ul>
+            <div class="project-links">
+              <a class="button button-primary" href="https://github.com/AdrianJ04/Quaker-Chemical-Corporation" target="_blank" rel="noopener noreferrer">Explore valuation project <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-art" aria-hidden="true">
+            <p class="visual-caption">Illustrative valuation framework</p>
+            <div class="model-card">
+              <div class="model-heading">DCF · Equity value framework</div>
+              <div class="metric-row"><span>Operating forecast</span><strong>2026–2030</strong></div>
+              <div class="metric-row"><span>Projected free cash flows</span><strong>UFCF</strong></div>
+              <div class="metric-row"><span>Discount rate</span><strong>WACC</strong></div>
+              <div class="metric-row"><span>Terminal valuation</span><strong>Perpetuity</strong></div>
+              <div class="model-dcf">FINANCIAL MODELING · VALUATION</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="revenue-heading">
+          <div class="project-body">
+            <p class="project-index">Case Study 02 · Commercial Strategy</p>
+            <h3 class="project-title" id="revenue-heading">Revenue Management<br>&amp; Pricing Strategy</h3>
+            <p class="project-description">An independent business case using synthetic data to assess shifts in market share, pricing, sales volume and product mix, and develop actionable commercial recommendations.</p>
+            <div class="chips" aria-label="Project methods"><span class="chip">Revenue Analytics</span><span class="chip">Market Share</span><span class="chip">Pricing</span><span class="chip">Strategic Recommendations</span></div>
+            <ul class="project-points">
+              <li>Diagnose a simulated market share contraction.</li>
+              <li>Decompose revenue movements into price, volume and mix.</li>
+              <li>Recommend targeted pricing and portfolio actions.</li>
+            </ul>
+            <div class="project-links">
+              <a class="button button-primary" href="./Adrian_Jasso_Commercial_Strategy_Business_Case.pdf" target="_blank" rel="noopener noreferrer">View presentation (PDF) <span class="arrow" aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="https://github.com/AdrianJ04/Revenue-Management-Analytics" target="_blank" rel="noopener noreferrer">Project repository <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="project-art revenue" aria-hidden="true">
+            <p class="visual-caption">Illustrative scenario · Synthetic data</p>
+            <div class="revenue-card">
+              <div class="revenue-title">Market share movement</div>
+              <div class="revenue-value">−3.55<span style="font-size:19px;letter-spacing:0"> pp</span></div>
+              <div class="revenue-label">Simulated FY24 vs FY25 change</div>
+              <div class="bar-display"><div class="bar-col"><div class="bar" style="height:111px"></div><span class="bar-name">FY24</span></div><div class="bar-col"><div class="bar lower" style="height:104px"></div><span class="bar-name">FY25</span></div></div>
+              <div class="synthetic">Fictional figures are presented for demonstration only, not as actual company performance.</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="approach-section" id="approach" aria-labelledby="approach-heading">
+      <div class="container approach-grid">
+        <div><p class="kicker">02 / How I Work</p><h2 id="approach-heading">Structured thinking.<br>Practical insights.</h2><p class="approach-copy">My interests sit at the intersection of finance, commercial performance and problem solving. I aim to connect rigorous analysis with decisions that matter to a business.</p></div>
+        <div class="approach-items">
+          <div class="approach-item"><span class="step-num">01</span><div><strong>Define the business question</strong><p>Clarify the key decision, drivers and constraints before diving into data.</p></div></div>
+          <div class="approach-item"><span class="step-num">02</span><div><strong>Build the analytical framework</strong><p>Apply financial models, segmentation or quantitative analysis as appropriate.</p></div></div>
+          <div class="approach-item"><span class="step-num">03</span><div><strong>Communicate the implication</strong><p>Turn findings into understandable conclusions and actionable recommendations.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container"><div class="footer-inner"><div><p class="kicker" style="color:#b5d7ca">03 / Connect</p><h2>Let's connect.</h2><p>Interested in corporate finance, strategic consulting and analytics opportunities.</p><a class="button button-primary" href="https://github.com/AdrianJ04" target="_blank" rel="noopener noreferrer">Visit my GitHub profile <span class="arrow" aria-hidden="true">↗</span></a></div><nav class="footer-links" aria-label="Footer navigation"><a href="#work">Projects</a><a href="#approach">Approach</a><a href="https://github.com/AdrianJ04" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div><div class="footer-bottom"><span>© 2026 Adrian Jasso</span><span>Independent portfolio · All synthetic-data case studies are labeled.</span></div></div>
+  </footer>
+</body>
+</html>
