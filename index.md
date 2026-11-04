@@ -1,12 +1,10 @@
 # Adrian Jasso
 
-**Finance | Strategy | Business Analytics**
+**Finance · Strategy · Business Analytics**
 
-Mechanical Electrical Engineering Student | Corporate Finance
+Mechanical Electrical Engineering Student · Corporate Finance
 
-Welcome to my professional portfolio.
-Explore selected projects in financial modeling,
-business strategy, and data analytics.
+Welcome to my professional portfolio. Explore selected projects in financial modeling, business strategy, and data analytics.
 
 ---
 
@@ -14,22 +12,24 @@ business strategy, and data analytics.
 
 ### Quaker Chemical Corporation — Equity Valuation
 
-Independent valuation case study using DCF,
-financial forecasting, WACC, sensitivity analysis,
-and comparable companies.
+Independent valuation case study using DCF, financial forecasting, WACC, sensitivity analysis, and comparable companies.
 
-[View Project](https://github.com/AdrianJ04/quaker-chemical-valuation)
+[View Quaker Chemical Project](https://github.com/AdrianJ04/Quaker-Chemical-Corporation)
 
-### Revenue Management Analytics & Automation
+### Revenue Management Analytics — Commercial Strategy
 
-Independent business analytics demonstration
-covering pricing insights and Python automation.
+Independent business case study covering market share, pricing dynamics, revenue performance, and strategic recommendations using fictional data.
 
-[View Project](https://github.com/AdrianJ04/revenue-management-analytics)
+[View Revenue Management Project](https://github.com/AdrianJ04/Revenue-Management-Analytics)
 
 ---
 
 ## Areas of Interest
 
-Corporate Finance | Strategy Consulting |
-Investment Banking | Business Analytics
+Corporate Finance · Strategy Consulting · Investment Banking · Business Analytics
+
+---
+
+## Contact
+
+[GitHub Profile](https://github.com/AdrianJ04)
